@@ -15,4 +15,9 @@ class dusun extends Model
         'image',
         'telp'
     ];
+
+    public function job_title()
+    {
+        return $this->belongsTo(Jabatan::class, 'job_title_id');
+    }
 }

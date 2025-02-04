@@ -12,4 +12,9 @@ class Jabatan extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function dusun()
+    {
+        return $this->hasMany(Dusun::class, 'job_title_id');
+    }
 }

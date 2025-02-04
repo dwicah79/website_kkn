@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             UmkmSeeder::class,
             NewsSeeder::class,
             JabatanSeeder::class,
+            Struktur_DesaSeeder::class,
         ]);
     }
 }

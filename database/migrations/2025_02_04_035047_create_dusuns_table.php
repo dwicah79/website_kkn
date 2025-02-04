@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::create('dusuns', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('job_title');
+            $table->integer('job_title_id');
             $table->string('image');
             $table->string('telp');
             $table->timestamps();
